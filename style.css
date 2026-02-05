@@ -1,379 +1,222 @@
-:root {
-    /* Brand Colors - SRM University AP (Microsite Style) */
-    --primary-color: #00aeef;
-    /* SRM Cyan Blue */
-    --primary-hover: #0095cc;
-    --secondary-color: #333333;
-    /* Dark Grey/Black for Headers */
-    --accent-color: #fdb913;
-    /* Yellow/Gold for potential highlights */
+/* Simple, Clean Academic Website - No Fancy Effects */
 
-    /* Theme Colors */
-    --bg-color: #ffffff;
-    --header-bg: #ffffff;
-    --nav-bg: #00aeef;
-
-    /* Text Colors */
-    --text-main: #333333;
-    --text-muted: #666666;
-    --text-light: #ffffff;
-
-    /* Borders */
-    --border-color: #e5e5e5;
-
-    /* Fonts */
-    --font-heading: 'inter', sans-serif;
-    /* Clean Sans for Microsite */
-    --font-body: 'Inter', sans-serif;
-
-    /* Transitions */
-    --transition-fast: 0.2s ease;
-}
-
-/* Reset & Base */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-html {
-    scroll-behavior: smooth;
-}
-
 body {
-    font-family: var(--font-body);
-    background-color: var(--bg-color);
-    color: var(--text-main);
+    font-family: Arial, Helvetica, sans-serif;
     line-height: 1.6;
-    overflow-x: hidden;
+    color: #333;
+    background-color: #f5f5f5;
 }
 
-a {
-    text-decoration: none;
-    color: inherit;
-    transition: var(--transition-fast);
-}
-
-ul {
-    list-style: none;
-}
-
-img {
-    max-width: 100%;
-    display: block;
-}
-
-/* Utilities */
 .container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 1.5rem;
+    padding: 0 20px;
 }
 
-.btn {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    padding: 0.5rem 1.5rem;
-    font-weight: 600;
-    font-size: 0.9rem;
-    border-radius: 0;
-    /* Square buttons like microsite */
-    cursor: pointer;
-    transition: all var(--transition-fast);
-}
-
-.btn-primary {
-    background: var(--primary-color);
-    color: white;
-    border: none;
-}
-
-.btn-primary:hover {
-    background: var(--primary-hover);
-}
-
-/* Header Structure */
+/* Header */
 header {
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #003366;
+    color: white;
+    padding: 20px 0;
+    border-bottom: 3px solid #00509e;
 }
 
-/* Top Bar (White) */
-.header-top {
-    background: white;
-    padding: 1rem 0;
-    border-bottom: 1px solid #eee;
-}
-
-.header-top .container {
+.header-content {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.logo-area {
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
     display: flex;
-    align-items: center;
-    gap: 15px;
+    gap: 30px;
 }
 
-.srm-logo-text {
-    font-family: 'Times New Roman', serif;
-    font-size: 2rem;
-    font-weight: 700;
-    color: #b5944a;
-    /* SRM Gold Logo Color approx */
-    line-height: 1;
-}
-
-.univ-subtext {
-    font-family: sans-serif;
-    font-size: 0.8rem;
-    color: #333;
-    display: block;
-    letter-spacing: 1px;
-}
-
-.dept-name {
-    font-size: 1.5rem;
-    font-weight: 600;
-    color: #333;
-    border-left: 1px solid #ccc;
-    padding-left: 15px;
-    margin-left: 10px;
-}
-
-.header-contact {
-    text-align: right;
-    font-size: 0.9rem;
-    color: #333;
-    font-weight: 600;
-}
-
-.contact-highlight {
-    background: #fdb913;
-    padding: 5px 10px;
-    display: inline-block;
-    margin-left: 10px;
-    color: #000;
-}
-
-/* Navbar (Cyan Blue) */
-.main-nav {
-    background: var(--nav-bg);
+nav a {
     color: white;
+    text-decoration: none;
+    font-size: 16px;
 }
 
-.nav-links {
-    display: flex;
-    justify-content: flex-start;
-    /* Left aligned */
-    gap: 2rem;
+nav a:hover {
+    text-decoration: underline;
 }
 
-.nav-links a {
-    color: white;
-    font-weight: 600;
-    font-size: 1rem;
-    padding: 1rem 0;
-    border-bottom: 3px solid transparent;
-}
-
-.nav-links a:hover {
-    border-bottom-color: white;
-}
-
-/* Hero Section (Banner Style) */
+/* Hero Section */
 .hero {
-    position: relative;
-    height: 400px;
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80');
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    align-items: center;
-    color: white;
-}
-
-.hero-overlay {
-    background: rgba(0, 0, 0, 0.6);
-    padding: 2rem;
-    border-left: 5px solid var(--primary-color);
-    max-width: 600px;
-    backdrop-filter: blur(5px);
-}
-
-.hero-title {
-    font-size: 2.5rem;
-    font-weight: 700;
-    margin-bottom: 0.5rem;
-    color: var(--accent-color);
-}
-
-.hero-subtitle {
-    font-size: 1.2rem;
-    margin-bottom: 1rem;
-}
-
-/* Sidebar Tab (Apply Now) */
-.sidebar-tab {
-    position: fixed;
-    right: 0;
-    top: 50%;
-    transform: translateY(-50%);
-    z-index: 1001;
-    display: flex;
-    flex-direction: column;
-    gap: 1px;
-}
-
-.tab-item {
-    background: #fdb913;
-    color: black;
-    writing-mode: vertical-rl;
-    text-orientation: mixed;
-    padding: 1.5rem 0.5rem;
-    font-weight: 700;
-    text-transform: uppercase;
-    font-size: 0.9rem;
-    cursor: pointer;
-    transition: width 0.3s;
-    text-align: center;
-    box-shadow: -2px 2px 5px rgba(0, 0, 0, 0.2);
-}
-
-.tab-item:hover {
-    background: #e5a812;
-    padding-right: 1rem;
-}
-
-.tab-blue {
-    background: var(--primary-color);
-    color: white;
-}
-
-/* Content Sections */
-.section {
+    background-color: white;
     padding: 60px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.hero h1 {
+    font-size: 36px;
+    color: #003366;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 18px;
+    color: #666;
+    max-width: 800px;
+    margin-bottom: 30px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: #00509e;
+    color: white;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.btn:hover {
+    background-color: #003d7a;
+}
+
+/* Sections */
+.section {
+    background-color: white;
+    padding: 50px 0;
+    margin-bottom: 20px;
 }
 
 .section-title {
-    color: var(--primary-color);
-    font-size: 2rem;
-    font-weight: 700;
-    margin-bottom: 2rem;
+    font-size: 28px;
+    color: #003366;
+    margin-bottom: 30px;
+    border-bottom: 2px solid #00509e;
+    padding-bottom: 10px;
 }
 
-/* Tables */
-.table-container {
-    overflow-x: auto;
-    border: 1px solid #ddd;
+/* About Section */
+.about-content {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #555;
 }
 
-table {
-    width: 100%;
-    border-collapse: collapse;
-}
-
-th {
-    background: var(--primary-color);
-    /* Cyan Header */
-    color: white;
-    padding: 1rem;
-    text-align: left;
-}
-
-td {
-    padding: 1rem;
-    border-bottom: 1px solid #eee;
-}
-
-tr:nth-child(even) {
-    background: #f9f9f9;
-}
-
-/* Speaker Cards */
+/* Speakers Grid */
 .speakers-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 2rem;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-top: 30px;
 }
 
 .speaker-card {
-    border: 1px solid #eee;
-    background: white;
-    transition: transform 0.2s;
+    border: 1px solid #ddd;
+    background-color: #fafafa;
+    text-align: center;
 }
 
-.speaker-card:hover {
-    border-color: var(--primary-color);
-    transform: translateY(-5px);
-}
-
-.speaker-image-wrapper {
+.speaker-image {
+    width: 100%;
     height: 300px;
-    background: #eee;
+    background-color: #e0e0e0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.speaker-image-wrapper img {
+.speaker-image img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
 .speaker-info {
-    padding: 1.5rem;
+    padding: 20px;
 }
 
 .speaker-name {
-    color: var(--primary-color);
-    font-size: 1.2rem;
-    font-weight: 700;
-    margin-bottom: 0.5rem;
+    font-size: 20px;
+    font-weight: bold;
+    color: #003366;
+    margin-bottom: 8px;
 }
 
-.speaker-role {
-    font-size: 0.9rem;
-    font-weight: 600;
-    color: #333;
-    margin-bottom: 0.5rem;
+.speaker-title {
+    font-size: 14px;
+    color: #00509e;
+    margin-bottom: 10px;
+}
+
+.speaker-bio {
+    font-size: 14px;
+    color: #666;
+}
+
+/* Schedule Table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: white;
+}
+
+th {
+    background-color: #003366;
+    color: white;
+    padding: 12px;
+    text-align: left;
+    font-weight: normal;
+}
+
+td {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
 }
 
 /* Footer */
-.footer {
-    background: #222;
+footer {
+    background-color: #333;
     color: white;
-    padding: 3rem 0;
+    padding: 30px 0;
     text-align: center;
+    margin-top: 40px;
 }
 
-.bg-light {
-    background-color: #f8f9fa;
+footer p {
+    margin: 5px 0;
 }
 
 /* Responsive */
 @media (max-width: 768px) {
-    .header-top .container {
+    .speakers-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .header-content {
         flex-direction: column;
-        align-items: flex-start;
-        gap: 1rem;
+        gap: 20px;
     }
 
-    .nav-links {
+    nav ul {
         flex-direction: column;
-        gap: 0;
+        gap: 10px;
     }
 
-    .nav-links a {
-        padding: 0.5rem 0;
-        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-    }
-
-    .dept-name {
-        font-size: 1.2rem;
+    .hero h1 {
+        font-size: 28px;
     }
 }
