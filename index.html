@@ -4,74 +4,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ACM India ROCS 2025 | SRM University AP</title>
-    <meta name="description"
-        content="ACM India Research Opportunities in Computer Science (ROCS) 2025 hosted by SRM University AP.">
+    <title>School of Engineering and Sciences (SEAS) - ACM ROCS</title>
 
-    <!-- Fonts: Merriweather (Serif) & Inter (Sans) -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Merriweather:ital,wght@0,400;0,700;1,400&display=swap"
-        rel="stylesheet">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome or Lucide -->
+    <script src="https://unpkg.com/lucide@latest"></script>
 
     <link rel="stylesheet" href="style.css">
-
-    <!-- Icons -->
-    <script src="https://unpkg.com/lucide@latest"></script>
 </head>
 
 <body>
 
-    <nav class="navbar">
-        <div class="container nav-container">
-            <a href="#" class="logo">
-                <!-- Placeholder for Logo could be an image -->
-                SRM University AP <span style="font-weight: 400; color: var(--text-muted);">|</span> ACM ROCS
-            </a>
-            <div class="nav-links">
-                <a href="#home">Home</a>
-                <a href="#about">About</a>
-                <a href="#schedule">Schedule</a>
-                <a href="#speakers">Speakers</a>
-                <a href="#register" class="btn btn-primary">Register Now</a>
+    <!-- Header -->
+    <header>
+        <!-- Top Bar (White) -->
+        <div class="header-top">
+            <div class="container">
+                <div class="logo-area">
+                    <!-- SRM Logo Placeholder (Text representation for now) -->
+                    <div class="srm-branding">
+                        <div class="srm-logo-text">SRM</div>
+                        <span class="univ-subtext">UNIVERSITY AP</span>
+                    </div>
+                    <div class="dept-name">School of Engineering and Sciences (SEAS)</div>
+                </div>
+
+                <div class="header-contact">
+                    <span class="admission-text">Admission Help Line</span>
+                    <div class="contact-highlight">080-6988-6999</div>
+                </div>
             </div>
-            <button class="mobile-menu-btn" aria-label="Toggle menu">
-                <i data-lucide="menu"></i>
-            </button>
         </div>
-    </nav>
+
+        <!-- Main Nav (Cyan Blue) -->
+        <nav class="main-nav">
+            <div class="container">
+                <div class="nav-links">
+                    <a href="#home">Home</a>
+                    <a href="#about">Academics</a>
+                    <a href="#speakers">People</a>
+                    <a href="#research">Research</a>
+                    <a href="#schedule">Events</a>
+                    <a href="#news">News</a>
+                    <a href="#placement">Placement</a>
+                    <a href="#contact">About</a>
+                </div>
+                <!-- Mobile menu btn would go here -->
+            </div>
+        </nav>
+    </header>
+
+    <!-- Sidebar Tabs (Fixed Right) -->
+    <div class="sidebar-tab">
+        <div class="tab-item">Apply Now</div>
+        <div class="tab-item tab-blue">Admissions 2026</div>
+    </div>
 
     <main>
         <!-- Hero Section -->
         <section id="home" class="hero">
-            <div class="container hero-content">
-                <div class="badge">Research Opportunities in Computer Science</div>
-                <h1 class="hero-title">
-                    Refining the Future of Computing Research
-                </h1>
-                <p class="hero-subtitle">
-                    Join us at <strong>SRM University AP</strong> for the ACM India ROCS event.
-                    Inspiring the next generation of researchers through expert talks, interactions, and innovation.
-                </p>
-                <div class="hero-actions">
-                    <a href="#register" class="btn btn-primary btn-lg">Reserve Your Spot</a>
-                    <a href="#about" class="btn btn-outline btn-lg">Learn More</a>
-                </div>
-
-                <div class="stats-row">
-                    <div class="stat-item">
-                        <span class="stat-number">Sep 2025</span>
-                        <span class="stat-label">Event Date</span>
-                    </div>
-                    <div class="stat-item">
-                        <span class="stat-number">3+</span>
-                        <span class="stat-label">Keynote Speakers</span>
-                    </div>
-                    <div class="stat-item">
-                        <span class="stat-number">SRM AP</span>
-                        <span class="stat-label">Venue</span>
-                    </div>
+            <div class="hero-overlay">
+                <h1 class="hero-title">ACM India ROCS 2025</h1>
+                <p class="hero-subtitle">Refining Research Opportunities in Computer Science</p>
+                <div style="margin-top: 1rem; color: #fdb913; font-weight: 700;">
+                    DEPARTMENT OF COMPUTER SCIENCE & ENGINEERING
                 </div>
             </div>
         </section>
@@ -79,89 +76,105 @@
         <!-- About Section -->
         <section id="about" class="section">
             <div class="container">
-                <div class="section-header">
-                    <h2 class="section-title">About the Initiative</h2>
-                </div>
-                <div class="about-grid">
-                    <div class="about-content">
-                        <p class="lead">
-                            ACM India ROCS (Research Opportunities in Computer Science) is a flagship initiative
-                            designed to introduce undergraduate students to the diverse and exciting world of research.
-                        </p>
-                        <p>
-                            Hosted by <strong>SRM University AP</strong>, this event brings together leading experts
-                            from IITs and top research institutions to share their journey and insights. The goal is to
-                            demystify research careers and inspire students to pursue innovation in academia and
-                            industry.
-                        </p>
-                        <ul class="feature-list">
-                            <li><i data-lucide="check-circle"></i> Insightful talks by field experts</li>
-                            <li><i data-lucide="check-circle"></i> Direct interaction with researchers</li>
-                            <li><i data-lucide="check-circle"></i> Guidance on PhD and research careers</li>
-                            <li><i data-lucide="check-circle"></i> Understanding the research landscape in India</li>
-                        </ul>
+                <p style="font-size: 1.1rem; color: #555; margin-bottom: 2rem;">
+                    Research Opportunities in Computer Science (ROCS) acts as a vanguard of practical technology,
+                    improving the research landscape we use every day. From theoretical complexity to AI-driven software
+                    engineering, our experts innovate and design to satisfy society's demands.
+                </p>
+
+                <h2 class="section-title">Message From HOD</h2>
+                <div class="about-grid" style="display: flex; gap: 2rem; align-items: flex-start;">
+                    <!-- Placeholder for HOD/Chair Image -->
+                    <img src="https://via.placeholder.com/300x200" alt="HOD Image"
+                        style="border: 5px solid #fff; box-shadow: 0 5px 15px rgba(0,0,0,0.1);">
+                    <div>
+                        <h3 style="color: var(--primary-color); font-size: 1.5rem;">Dr. Manikandan V.M</h3>
+                        <p style="font-weight: 600; color: #666; margin-bottom: 1rem;">Assistant Professor & Head of the
+                            Department</p>
+                        <p>The Computer Science department will enable a strong foundation of technical knowledge and
+                            related skills that will help students achieve global excellence in industry, academics, and
+                            research.</p>
                     </div>
-                    <div class="university-image-card">
-                        <div class="university-image-placeholder">
-                            <span>SRM University AP Campus Image</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Speakers Section -->
+        <section id="speakers" class="section bg-light">
+            <div class="container">
+                <h2 class="section-title">Distinguished Speakers</h2>
+
+                <div class="speakers-grid">
+                    <!-- Speaker 1 (Nitin Saurabh - Updated Photo Placeholder) -->
+                    <div class="speaker-card">
+                        <div class="speaker-image-wrapper">
+                            <!-- User Requested Photo Update: Looking for 'nitin_saurabh.jpg' -->
+                            <img src="nitin_saurabh.jpg" alt="Dr. Nitin Saurabh"
+                                onerror="this.src='https://via.placeholder.com/400x400?text=Dr.+Nitin+Saurabh'">
+                        </div>
+                        <div class="speaker-info">
+                            <h3 class="speaker-name">Dr. Nitin Saurabh</h3>
+                            <p class="speaker-role">IIT Hyderabad</p>
+                            <p style="font-size: 0.9rem; color: #666;">Theoretical Computer Science</p>
+                        </div>
+                    </div>
+
+                    <!-- Speaker 2 -->
+                    <div class="speaker-card">
+                        <div class="speaker-image-wrapper">
+                            <img src="https://via.placeholder.com/400x400?text=Dr.+Desarkar" alt="Dr. M. S. Desarkar">
+                        </div>
+                        <div class="speaker-info">
+                            <h3 class="speaker-name">Dr. M. S. Desarkar</h3>
+                            <p class="speaker-role">IIT Hyderabad</p>
+                            <p style="font-size: 0.9rem; color: #666;">Recommender Systems</p>
+                        </div>
+                    </div>
+
+                    <!-- Speaker 3 -->
+                    <div class="speaker-card">
+                        <div class="speaker-image-wrapper">
+                            <img src="https://via.placeholder.com/400x400?text=Dr.+Chimalakonda"
+                                alt="Dr. Sridhar Chimalakonda">
+                        </div>
+                        <div class="speaker-info">
+                            <h3 class="speaker-name">Dr. Sridhar Chimalakonda</h3>
+                            <p class="speaker-role">IIT Tirupathi</p>
+                            <p style="font-size: 0.9rem; color: #666;">Software Engineering</p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Schedule Section (New) -->
-        <section id="schedule" class="section bg-light">
+        <!-- Schedule -->
+        <section id="schedule" class="section">
             <div class="container">
-                <div class="section-header center">
-                    <h2 class="section-title">Event Schedule</h2>
-                    <p style="color: var(--text-muted); margin-top: 10px;">A day of learning and inspiration.</p>
-                </div>
-
+                <h2 class="section-title">Event Schedule</h2>
                 <div class="table-container">
                     <table>
                         <thead>
                             <tr>
-                                <th style="width: 20%;">Time</th>
-                                <th style="width: 50%;">Session</th>
-                                <th style="width: 30%;">Speaker</th>
+                                <th>Time</th>
+                                <th>Session</th>
+                                <th>Speaker</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
-                                <td>09:00 AM - 09:30 AM</td>
-                                <td><strong>Registration & Inauguration</strong></td>
-                                <td>SRM AP & ACM India Team</td>
+                                <td>09:00 AM</td>
+                                <td>Registration</td>
+                                <td>-</td>
                             </tr>
                             <tr>
-                                <td>09:30 AM - 10:30 AM</td>
-                                <td>Keynote: Theoretical Computer Science</td>
+                                <td>09:30 AM</td>
+                                <td>Keynote Talk</td>
                                 <td>Dr. Nitin Saurabh</td>
                             </tr>
                             <tr>
-                                <td>10:30 AM - 11:30 AM</td>
-                                <td>Session: Recommender Systems</td>
-                                <td>Dr. Maunendra Sarkar Desarkar</td>
-                            </tr>
-                            <tr>
-                                <td>11:30 AM - 11:45 AM</td>
-                                <td><em>Tea Break & Networking</em></td>
-                                <td>-</td>
-                            </tr>
-                            <tr>
-                                <td>11:45 AM - 12:45 PM</td>
-                                <td>Session: Software Engineering in AI</td>
-                                <td>Dr. Sridhar Chimalakonda</td>
-                            </tr>
-                            <tr>
-                                <td>01:00 PM - 02:00 PM</td>
-                                <td><strong>Lunch Break</strong></td>
-                                <td>-</td>
-                            </tr>
-                            <tr>
-                                <td>02:00 PM - 03:00 PM</td>
-                                <td>Panel Discussion: Careers in Research</td>
-                                <td>All Speakers</td>
+                                <td>11:00 AM</td>
+                                <td>Technical Session</td>
+                                <td>Dr. M. S. Desarkar</td>
                             </tr>
                         </tbody>
                     </table>
@@ -169,96 +182,16 @@
             </div>
         </section>
 
-        <!-- Speakers Section -->
-        <section id="speakers" class="section">
-            <div class="container">
-                <div class="section-header center">
-                    <h2 class="section-title">Distinguished Speakers</h2>
-                </div>
-
-                <div class="speakers-grid">
-                    <!-- Speaker 1 -->
-                    <div class="speaker-card">
-                        <div class="speaker-image-wrapper">
-                            <div class="speaker-placeholder">NS</div>
-                        </div>
-                        <div class="speaker-info">
-                            <h3 class="speaker-name">Dr. Nitin Saurabh</h3>
-                            <p class="speaker-role">IIT Hyderabad</p>
-                            <p class="speaker-bio">Expert in Theoretical Computer Science and Complexity Theory.
-                                Focusing on algebraic complexity and lower bounds.</p>
-                            <a href="https://iith.ac.in/cse/nitin/" target="_blank" class="link-btn">
-                                Academic Profile <i data-lucide="arrow-right" style="width: 16px;"></i>
-                            </a>
-                        </div>
-                    </div>
-
-                    <!-- Speaker 2 -->
-                    <div class="speaker-card">
-                        <div class="speaker-image-wrapper">
-                            <div class="speaker-placeholder">MD</div>
-                        </div>
-                        <div class="speaker-info">
-                            <h3 class="speaker-name">Dr. M. S. Desarkar</h3>
-                            <p class="speaker-role">IIT Hyderabad</p>
-                            <p class="speaker-bio">Specializes in Data Mining, Information Retrieval, and Recommender
-                                Systems. Exploring user behavior in large datasets.</p>
-                            <a href="https://iith.ac.in/cse/maunendra/" target="_blank" class="link-btn">
-                                Academic Profile <i data-lucide="arrow-right" style="width: 16px;"></i>
-                            </a>
-                        </div>
-                    </div>
-
-                    <!-- Speaker 3 -->
-                    <div class="speaker-card">
-                        <div class="speaker-image-wrapper">
-                            <div class="speaker-placeholder">SC</div>
-                        </div>
-                        <div class="speaker-info">
-                            <h3 class="speaker-name">Dr. Sridhar Chimalakonda</h3>
-                            <p class="speaker-role">IIT Tirupathi</p>
-                            <p class="speaker-bio">Researching Software Engineering, Human-Computer Interaction, and the
-                                intersection of AI with software development.</p>
-                            <a href="https://old.iittp.ac.in/dr-sridhar-chimalakonda" target="_blank" class="link-btn">
-                                Academic Profile <i data-lucide="arrow-right" style="width: 16px;"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Registration CTA -->
-        <section id="register" class="section cta-section">
-            <div class="container">
-                <h2 class="cta-title">Registration Opening Soon</h2>
-                <p class="cta-subtitle">Be part of the premier computer science research event in the region.</p>
-                <button class="btn" style="background: white; color: var(--secondary-color); padding: 1rem 2.5rem;">
-                    Get Notified
-                </button>
-            </div>
-        </section>
-
     </main>
 
     <footer class="footer">
-        <div class="container footer-content">
-            <div class="footer-left">
-                <a href="#" class="logo-sm">SRM University AP</a>
-                <p>Neerukonda, Mangalagiri Mandal<br>Guntur District, Andhra Pradesh - 522240</p>
-                <p style="margin-top: 1rem;">&copy; 2025 SRM University AP. All rights reserved.</p>
-            </div>
-            <div class="footer-right">
-                <div class="footer-socials">
-                    <a href="#" aria-label="Twitter"><i data-lucide="twitter"></i></a>
-                    <a href="#" aria-label="Linkedin"><i data-lucide="linkedin"></i></a>
-                    <a href="#" aria-label="Facebook"><i data-lucide="facebook"></i></a>
-                </div>
-            </div>
+        <div class="container">
+            <h3>SRM University AP</h3>
+            <p>Andhra Pradesh, India</p>
+            <p>&copy; 2025 All Rights Reserved</p>
         </div>
     </footer>
 
-    <script src="script.js"></script>
     <script>
         lucide.createIcons();
     </script>
